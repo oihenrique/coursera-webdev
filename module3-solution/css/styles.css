@@ -1,5 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Serif:wght@700&display=swap');
+
+/* GENERAL CONFIG */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
 body {
     font-size: 16px;
-    color: #111;
-    background-color: #111;
+    background-color: #D93E30;
+}
+
+/* HEADER AND NAVBAR */
+#navbar {
+    background-color: #0D0D0D;
+    border: 0px;
+    border-radius: 0px;
+}
+
+#logo-img {
+    width: 90px;
+    height: 90px;
+    margin-right: 20px;
+}
+
+.bi-list {
+    color: #f2f2f2;
+}
+
+.nav-item {
+    margin-right: 30px;
+}
+
+header a {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+.navbar-brand h1 {
+    font-weight: bolder;
+    margin-bottom: 3px;
+    margin-top: 10px; 
+    font-size: 1.5em;
+}
+
+.navbar-brand:hover {
+    color:#f2f2f2;
+}
+
+#navbar-items {
+position: relative;
+left: 485px;
+}
+header a p {
+    color: #D93E30;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 0.8em;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.nav-item ul li {
+    list-style: none;
+}
+
+.nav-item a:hover {
+    color: #f2f2f2;
 }
