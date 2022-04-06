@@ -11,6 +11,7 @@
 body {
     font-size: 16px;
     background-color: #D93E30;
+    overflow-x: hidden;
 }
 
 /* HEADER AND NAVBAR */
@@ -30,19 +31,24 @@ body {
     color: #f2f2f2;
 }
 
-.nav-item {
-    margin-right: 30px;
-}
-
 header a {
     text-decoration: none;
     color: #f2f2f2;
 }
+
+header a p {
+    color: #D93E30;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 0.7em;
+}
+
 .navbar-brand h1 {
     font-weight: bolder;
     margin-bottom: 3px;
     margin-top: 10px; 
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 .navbar-brand:hover {
@@ -53,12 +59,9 @@ header a {
 position: relative;
 left: 485px;
 }
-header a p {
-    color: #D93E30;
-    font-weight: bold;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 0.8em;
+
+.nav-item {
+    margin-right: 30px;
 }
 
 .nav-item a {
@@ -73,5 +76,5 @@ header a p {
 }
 
 .nav-item a:hover {
-    color: #f2f2f2;
+    color: #F2B90F;
 }
