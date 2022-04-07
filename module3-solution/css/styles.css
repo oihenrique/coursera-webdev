@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Noto+Serif:wght@700&display=swap');
 
 /* GENERAL CONFIG */
 * {
@@ -22,13 +22,13 @@ body {
 }
 
 #logo-img {
-    width: 90px;
-    height: 90px;
+    width: 3em;
+    height: 3em;
     margin-right: 20px;
 }
 
-.bi-list {
-    color: #f2f2f2;
+.container {
+    padding: 0.2em;
 }
 
 header a {
@@ -46,29 +46,25 @@ header a p {
 
 .navbar-brand h1 {
     font-weight: bolder;
-    margin-bottom: 3px;
+    margin-bottom: 1px;
     margin-top: 10px; 
     font-size: 1.4em;
+    line-height: .80;
 }
 
 .navbar-brand:hover {
     color:#f2f2f2;
 }
 
-#navbar-items {
-position: relative;
-left: 485px;
-}
-
 .nav-item {
-    margin-right: 30px;
+    margin-right: 10px;
 }
 
 .nav-item a {
     text-decoration: none;
     color: #f2f2f2;
-    font-size: 1em;
-    font-weight: bold;
+    font-size: 1.1em;
+    font-weight: 600;
 }
 
 .nav-item ul li {

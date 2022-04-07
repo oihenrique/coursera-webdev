@@ -23,10 +23,10 @@
 <body>
     <!-- HEADER AND NAVBAR -->
     <header>
-        <nav id="navbar" class="navbar navbar-expand-lg"> <!--navbar class means navgation bar, expand-lg is a bootstrap class to get the navbar full size while the window is large -->
-            <div class="container py-0"> <!-- container is a BS class, py-3 too,your function is to make a padding top and bottom -->
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark"> <!--navbar class means navgation bar, expand-lg is a bootstrap class to get the navbar full size while the window is large, navbar-dark to get the elements white -->
+            <div class="container"> <!-- container is a BS class, py-3 too, your function is to make a padding top and bottom -->
                 <a href="#" class="navbar-brand">  <!-- navbar-brand means the brand of the site -->
-                    <img src="images/logo-image.png" alt="logo-image" id="logo-img">
+                    <img class="d-inline-block align-top" src="images/logo-image.png" alt="logo-image" id="logo-img">
                     <span class="float-end">
                         <h1>SushiSoul</h1>
                         <p>Sushi Certified</p>
@@ -41,10 +41,10 @@
                     aria-expanded="false"
                     aria-label="Toggle navigation"
                 >
-                    <i class="bi bi-list"></i>  <!-- bi = bootstrap icons, bi-list = list icon-->
+                    <span class="navbar-toggler-icon"></span>  <!-- Bootstrap class to get navgation icon-->
                 </button>
                 <div class="collapse navbar-collapse" id="navbar-items">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
                         <li class="nav-item">
                             <a href="#" class="nav-link active" aria-current="page">Home</a>
                         </li>
