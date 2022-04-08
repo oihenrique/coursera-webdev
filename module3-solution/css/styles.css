@@ -27,7 +27,7 @@ body {
     margin-right: 20px;
 }
 
-.container {
+#container-navbar {
     padding: 0.2em;
 }
 
@@ -74,3 +74,117 @@ header a p {
 .nav-item a:hover {
     color: #F2B90F;
 }
+
+.bi-telephone {
+    margin-right: 5px;
+}
+
+@media (max-width: 591px) {
+    #container-navbar {
+        margin-left: 1.2em;
+    }
+}
+/* HEADER END */
+
+/* CALL BUTTON ON MOBILE */
+#call-btn {
+    height: 6em;
+    background-color: #D9CBBA;
+    padding: 1em;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    border-radius: 30px;
+    display: block;
+}
+
+#number {
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: .5;
+}
+
+.btn .bi-telephone {
+    margin-right: 8px;
+}
+
+#xs-deliver {
+    font-size: 1em;
+    font-weight: 600;
+    line-height: .5;
+}
+
+@media (max-width: 991px) {
+    #call-btn {
+        height: 90%;
+        width: 90%;
+        font-size: 70%;
+    }
+}
+
+@media (min-width: 992px) {
+    #call-btn {
+        visibility: hidden;
+        display: inline;
+    }
+}
+/* MOBILE CALL BUTTON END */
+
+/* HOME PAGE */
+#jumbotron {
+    background-color: #D9CBBA;
+    box-shadow: 0px 8px 50px #0D0D0d30;
+}
+
+#jumbotron img {
+    border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+    #jumbotron {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+/* Navigation Tiles */
+#menu-tile, #specials-tile, #map-tile {
+    height: 250px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #0D0D0D;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+    box-shadow: 0px 1px 5px 1px #F29472;
+}
+
+#menu-tile {
+    background: url(../images/food-1.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#specials-tile {
+    background: url(../images/food-2.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    background-color: #111;
+    color: #f2f2f2;
+    opacity: 0.8;
+}
+/* HOME PAGE */
+
