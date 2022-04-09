@@ -186,5 +186,69 @@ header a p {
     color: #f2f2f2;
     opacity: 0.8;
 }
-/* HOME PAGE */
+/* END OF HOME PAGE */
 
+/* FOOTER */
+.panel-footer {
+    background-color: #0D0D0D;
+    margin-top: 5em;
+}
+
+#hours, #address, #testimonials {
+    padding: 2 2em 1em 2em;
+    color: #f2f2f2;
+
+}
+
+#hours h6, #address h6, #testimonials h6 {
+    font-family: 'Noto', serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: -1em;
+}
+
+#hours, #address {
+    line-height: 1.7;
+}
+
+#testimonials {
+    font-size: 0.9em;
+    margin-top: 0.4em;
+}
+
+#testimonials p:nth-child(3) {
+    margin-top: 0.8em;
+}
+#address p {
+    font-size: 0.8em;
+    color: #D93E30;
+}
+
+#copyright {
+    margin-bottom: 1em;
+    color: #f2f2f2;
+}
+
+@media (min-width: 576px) {
+    .visible-sm {
+        visibility: hidden;
+    }
+
+    #hours, #address, #testimonials {
+        padding-top: 3em;
+    }
+}
+
+@media (max-width: 575px) {
+    .visible-sm {
+        visibility: visible;
+    }
+    
+    #hours, #address, #testimonials {
+        text-align: center;
+    }
+
+    #hours {
+        padding-top: 3em;
+    }
+}
