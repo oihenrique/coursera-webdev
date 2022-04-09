@@ -48,10 +48,10 @@
                 <div class="collapse navbar-collapse" id="navbar-items">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+                            <a href="index.html" class="nav-link" aria-current="page">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Menu</a>
+                            <a href="#" class="nav-link active">Menu</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">About</a>
@@ -66,51 +66,86 @@
     </header>
     <!-- HEADER AND NAVBAR END -->
 
-    <!-- Call Button on Mobile -->
-    <div id="call-btn" class="container text-center position-relative">
-        <a id="number" class="btn" href="#">
-            <span class="bi-telephone"></span>410-602-5008
-        </a>
-        <p id="xs-deliver">We Deliver!</p>
-    </div>
-
     <!-- HOME PAGE -->
-    <div id="jumbotron" class="container p-4 rounded-3"> <!-- jumbotron simulation, bootstrap 5 doesn't have jumbotron tag :/-->
-        <img src="images/restaurant-reduced.png" alt="restaurant image" class="img-fluid"> <!-- img-fluid to responsive images on bootstrap-->
-
-        <!-- Navigation Tiles -->
-        <div id="home-tiles" class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <a href="../module3-solution/menu-categories.html">
-                    <div id="menu-tile" class="img-fluid">
-                        <span>
-                            Menu
-                        </span>
-                    </div> <!-- End of #menu-tile -->
-                </a> <!-- end of menu link -->
-            </div> <!-- End of grid -->
-
-            <div class="col-lg-4 col-md-6 col-sm-12">
+    <div id="jumbotron" class="container p-4 rounded-3 mt-5"> <!-- jumbotron simulation, bootstrap 5 doesn't have jumbotron tag :/-->
+        <h2 id="menu-categories-title" class="text-center">Menu Categories</h2>
+        <div class="text-center">
+            Substituing white rice with brown rice or fried rice after 3:00pm will be R$10,00 for a pint and R$15,00 for a quart.
+        </div>
+        <section class="row">
+            <div class="col-sm-4 col-md-3 col-6 col-xxs-12">
                 <a href="#">
-                    <div id="specials-tile" class="img-fluid">
-                        <span>
-                            specials
-                        </span>
-                    </div> <!-- #menu-tile -->
-                </a> <!-- End of menu link -->
-            </div> <!-- End of grid -->
-
-            <div class="col-lg-4 col-md-12 col-sm-12">
-                <a href="https://goo.gl/maps/26QKCgG8yMWacmeu6" target="_blank">
-                    <div id="map-tile"> 
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15833.107704267723!2d-35.8843721302246!3d-7.209215999999988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ac1e36fffffffff%3A0x7f8d77b9c04d6a37!2sYoi%20Restaurante!5e0!3m2!1spt-BR!2sbr!4v1649383208367!5m2!1spt-BR!2sbr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <span>
-                            map
-                        </span>
-                    </div> <!-- End of #menu-tile -->
-                </a> <!-- End of menu link -->
-            </div> <!-- End of grid -->
-        </div> <!-- End of #home-tiles -->
+                    <div class="category-tile img-fluid">
+                        <img src="images/menu/salmon-sushi.jpg" alt="lunch" width="200" height="200">
+                        <span>Sushi</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 col-md-3 col-6 col-xxs-12">
+                <a href="#">
+                    <div class="category-tile img-fluid">
+                        <img src="images/menu/yakisoba-cover.jpg" alt="lunch" width="200" height="200">
+                        <span>Yakisoba</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 col-md-3 col-6 col-xxs-12">
+                <a href="#">
+                    <div class="category-tile img-fluid">
+                        <img src="images/menu/A/A-11.jpg" alt="lunch" width="200" height="200">
+                        <span>Lunch</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 col-md-3 col-6 col-xxs-12">
+                <a href="#">
+                    <div class="category-tile img-fluid">
+                        <img src="images/menu/B/B.jpg" alt="lunch" width="200" height="200">
+                        <span>Lunch</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 col-md-3 col-6 col-xxs-12">
+                <a href="#">
+                    <div class="category-tile img-fluid">
+                        <img src="images/menu/B/B-10.jpg" alt="lunch" width="200" height="200">
+                        <span>Lunch</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 col-md-3 col-6 col-xxs-12">
+                <a href="#">
+                    <div class="category-tile img-fluid">
+                        <img src="images/menu/B/B-6.jpg" alt="lunch" width="200" height="200">
+                        <span>Lunch</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 col-md-3 col-6 col-xxs-12">
+                <a href="#">
+                    <div class="category-tile img-fluid">
+                        <img src="images/menu/C/C.jpg" alt="lunch" width="200" height="200">
+                        <span>Lunch</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 col-md-3 col-6 col-xxs-12">
+                <a href="#">
+                    <div class="category-tile img-fluid">
+                        <img src="images/menu/C/C-12.jpg" alt="lunch" width="200" height="200">
+                        <span>Lunch</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 col-md-3 col-6 col-xxs-12">
+                <a href="#">
+                    <div class="category-tile img-fluid">
+                        <img src="" alt="lunch" width="200" height="200">
+                        <span>Lunch</span>
+                    </div>
+                </a>
+            </div>
+        </section>
     </div> <!-- End of #jumbotron -->
     <!-- HOME PAGE END -->
 

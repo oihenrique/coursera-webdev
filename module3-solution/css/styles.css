@@ -252,3 +252,52 @@ header a p {
         padding-top: 3em;
     }
 }
+
+/****** MENU CATEGORIES PAGE ******/
+#menu-categories-title {
+    font-family: 'Noto', serif;
+    font-weight: 700;
+    margin: 1em 0 1em;
+}
+
+#menu-categories-title + div {   /* the next sibling */
+    margin-bottom: 3em;
+}
+
+.category-tile {
+    position: relative;
+    border: 1px solid #111;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 30px;
+}
+
+.category-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background-color: #111;
+    color: #f2f2f2;
+    opacity: 0.8;
+}
+
+.category-tile:hover{
+    box-shadow: 0 1px 5px 1px #F29472;
+}
+
+@media (max-width: 479px) {
+    .col-xxs-12 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        width: 100%;
+    }
+}
