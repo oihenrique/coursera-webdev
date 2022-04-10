@@ -251,17 +251,22 @@ header a p {
     #hours {
         padding-top: 3em;
     }
+
+    .menu-item-description .menu-item-title {
+        margin-top: .5em;
+    }
 }
 
 /****** MENU CATEGORIES PAGE ******/
 #menu-categories-title {
     font-family: 'Noto', serif;
     font-weight: 700;
-    margin: 1em 0 1em;
+    font-size: 3em;
+    margin: 1em 0 0.5em;
 }
 
 #menu-categories-title + div {   /* the next sibling */
-    margin-bottom: 3em;
+    margin-bottom: 5em;
 }
 
 .category-tile {
@@ -301,3 +306,92 @@ header a p {
         width: 100%;
     }
 }
+/* END OF MENU CATEGORIES PAGE */
+
+/* SINGLE CATEGORY PAGE */
+.menu-item-tile {
+    margin-bottom: 25px;
+}
+
+.menu-item-tile hr {
+    width: 80%;
+}
+
+.menu-item-tile .menu-item-price {
+    font-size: 1.1em;
+    text-align: right;
+    margin-top: -8px;
+    margin-right: -15px;
+}
+
+.menu-item-price {
+    font-weight: 600;
+}
+
+.menu-item-photo {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin-right: -15px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width: 250px;
+}
+
+.menu-item-photo div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    border-radius: 10px;
+    background-color: #D93E30;
+    text-align: center;
+    color: #f2f2f2;
+    font-weight: 600;
+}
+
+.menu-item-description {
+    padding-right: 30px;
+}
+
+.menu-item-description h3 {
+    margin: 0 0 10px 15px;
+    font-size: 1.3em;    
+    font-weight: 600;
+}
+
+.menu-item-details {
+    margin-left: 15px;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+@media (max-width: 767px) {
+    .menu-item-photo {
+        margin-right: auto;
+    }
+
+    .menu-item-tile .menu-item-price {
+        text-align: center;
+    }
+
+    .menu-item-description {
+        text-align: center;
+
+    }
+
+    .menu-item-tile hr {
+        margin: 0 auto;
+    }
+    
+    .visible-md {
+        visibility: visible;
+    }
+}
+
+@media (min-width: 768px) {
+    .visible-md {
+        visibility: hidden;
+    }
+}
+/* END OF SINGLE CATEGORY PAGE */
