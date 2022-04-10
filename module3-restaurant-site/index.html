@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SushiSoul</title>
+    <link rel="shortcut icon" href="images/logo-image.png" type="image/x-icon">
+    <!-- CSS Bootstrap -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link 
+        rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <!--CSS Project-->
+    <link 
+        rel="stylesheet" href="css/styles.css"
+    />
+    
+</head>
+<body>
+    <!-- HEADER AND NAVBAR -->
+    <header>
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark"> <!--navbar class means navgation bar, expand-lg is a bootstrap class to get the navbar full size while the window is large, navbar-dark to get the elements white -->
+            <div class="container" id="container-navbar"> <!-- container is a BS class, py-3 too, your function is to make a padding top and bottom -->
+                <a href="index.html" class="navbar-brand">  <!-- navbar-brand means the brand of the site -->
+                    <img class="d-inline-block align-top" src="images/logo-image.png" alt="logo-image" id="logo-img">
+                    <span class="float-end">
+                        <h1>SushiSoul</h1>
+                        <p>Sushi Certified</p>
+                    </span>
+                </a> 
+                <button 
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbar-items"
+                    aria-controls="navbar-items"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>  <!-- Bootstrap class to get navgation icon-->
+                </button>
+
+                <!-- NAVBAR ITEMS -->
+                <div class="collapse navbar-collapse" id="navbar-items">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="menu-categories.html" class="nav-link">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><span class="bi-telephone"></span>410-602-5008</a>
+                        </li>
+                    </ul> <!-- #navbar-nav -->
+                </div> <!-- .collapse .navbar-collapse-->
+            </div> <!-- .container #container-navbar -->
+        </nav> <!-- #navbar .navbar -->
+    </header>
+    <!-- HEADER AND NAVBAR END -->
+
+    <!-- Call Button on Mobile -->
+    <div id="call-btn" class="container text-center position-relative">
+        <a id="number" class="btn" href="#">
+            <span class="bi-telephone"></span>410-602-5008
+        </a>
+        <p id="xs-deliver">We Deliver!</p>
+    </div>
+
+    <!-- HOME PAGE -->
+    <div id="jumbotron" class="container p-4 rounded-3"> <!-- jumbotron simulation, bootstrap 5 doesn't have jumbotron tag :/-->
+        <img src="images/restaurant-reduced.png" alt="restaurant image" class="img-fluid"> <!-- img-fluid to responsive images on bootstrap-->
+
+        <!-- Navigation Tiles -->
+        <div id="home-tiles" class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="menu-categories.html">
+                    <div id="menu-tile" class="img-fluid">
+                        <span>
+                            Menu
+                        </span>
+                    </div> <!-- End of #menu-tile -->
+                </a> <!-- end of menu link -->
+            </div> <!-- End of grid -->
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="#">
+                    <div id="specials-tile" class="img-fluid">
+                        <span>
+                            specials
+                        </span>
+                    </div> <!-- #menu-tile -->
+                </a> <!-- End of menu link -->
+            </div> <!-- End of grid -->
+
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <a href="https://goo.gl/maps/26QKCgG8yMWacmeu6" target="_blank">
+                    <div id="map-tile"> 
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15833.107704267723!2d-35.8843721302246!3d-7.209215999999988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ac1e36fffffffff%3A0x7f8d77b9c04d6a37!2sYoi%20Restaurante!5e0!3m2!1spt-BR!2sbr!4v1649383208367!5m2!1spt-BR!2sbr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <span>
+                            map
+                        </span>
+                    </div> <!-- End of #menu-tile -->
+                </a> <!-- End of menu link -->
+            </div> <!-- End of grid -->
+        </div> <!-- End of #home-tiles -->
+    </div> <!-- End of #jumbotron -->
+    <!-- HOME PAGE END -->
+
+    <!-- FOOTER -->
+    <footer class="panel-footer">
+        <div class="container">
+            <div class="row">
+                <section id="hours" class="col-sm-4">
+                    <span><h6>Hours</h6></span><br>
+                    Sun-Thurs: 11:15am - 10:00pm<br>
+                    Friday: 11:15am - 02:30pm<br>
+                    Saturday: closed
+                    <hr class="visible-sm">
+                </section>
+                <section id="address" class="col-sm-4">
+                    <span><h6>Address</h6></span><br>
+                    R. Manoel Tavares, 820 - Jardim Tavares<br>
+                    Campina Grande - PB, 58402-068<br>
+                    <p>
+                        *Delivery area within 3-4km, <strong>with minimum order </strong>of R$20 plus R$5 charge for all deliveries.
+                    </p>
+                    <hr class="visible-sm">
+                </section>
+                <section id="testimonials" class="col-sm-4">
+                    <span><h6>Testimonials</h6></span><br>
+                    <p>
+                       "The best japanese restaurant I've been to! And that's saying a lot, since I've been too many!" 
+                    </p> 
+                    <p>
+                        "Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"
+                    </p>
+                    <hr class="visible-sm">
+                </section>
+                <div id="copyright" class="text-center">
+                    &copy; Copyright SushiSoul 2022
+                </div>
+            </div>
+            
+        </div> <!-- End of container -->
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</body>
+</html>
