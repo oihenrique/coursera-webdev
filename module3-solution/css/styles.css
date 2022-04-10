@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&display=swap');
+
+/* GENERAL CONFIG */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+body {
+    background-color: #5E7F8C;
+    overflow-x: hidden;
+}
+/* END OF GENERAL CONFIG */
+
+/* HEADER AND NAVBAR */
+.navbar {
+    background-color: #243840;
+    padding: 1em;
+    width: 100%;
+}
+#logo-name {
+    font-weight: 700;
+    color: #F2F2F2;
+    margin-left: 0;
+}
+#logo-name span {
+    color: #F29472;
+}
+.nav-link {
+    font-weight: 600;
+    font-size: 1.4em;
+}
+/* END OF HEADER AND NAVBAR */
+
+/* HOME PAGE */
+#jumbotron{
+    margin-top: 4em;
+    margin-bottom: 4em;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px #24384080;
+}
+#jumbotron h2{
+    margin-top: 2em;
+    font-weight: 600;
+}
+#jumbotron h3{
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+/* END OF HOME PAGE */
+
+/* SMALL DEVICES MEDIA QUERIES */
+@media (min-width: 576px) {
+    .visible-sm {
+        visibility: hidden;
+    }
+}
+/* END OF SMALL DEVICES MEDIA QUERIES */
+
+/* MEDIUM DEVICES MEDIA QUERIES */
+
+/* END OF MEDIUM DEVICES MEDIA QUERIES */
+
+/* LARGE DEVICES MEDIA QUERIES */
+
+/* END OF LARGE DEVICES MEDIA QUERIES */
